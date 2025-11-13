@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2><b>Student Registration Form </b></h2>
+         <label for="Full Name">Full Name</label><br>
+        <input type="text" id="Full Name" name="Full Name" placeholder="Enter your Full Name"><br><br>
+ <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address"><br><br>
+         <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+         <label>gender</label>
+         <span class="gender"><input type="radio" id="male" name="gender" value="male">Male</span>
+          <span class="gender"><input type="radio" id="female" name="gender" value="female">Female</span>
+           <span class="gender"><input type="radio" id="other" name="gender" value="other">Other</span>
+           <br>
+             
+         <label for="course">Course</label><br>
+         <select id="course" name="course" >
+            <option value="">--Select Course--</option>
+  <option value="Btech">Btech</option>
+  <option value="Mtech">Mtech</option>
+  <option value="MBA">M.B.A</option>
+ </select><br><br>
+  <label for="contact">Contact No.</label><br>
+        <input type="text" id="contact" name="contact" placeholder="Enter phone number"><br><br>
+          <label for="address">Address</label><br>
+         <textarea id="address" name="address" placeholder="Enter your address"></textarea><br><br>
+         <div class="buttons">
+            <input type="submit" value="Register">
+             <input type="reset" value="clear">
+         </div>
+         <div class="footer">@2025 Registration Form</div>
+    </div>
+</body>
+</html>
