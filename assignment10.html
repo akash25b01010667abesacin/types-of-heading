@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive E-commerce Navbar</title>
+  <style>
+    /* Reset default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+      display: flex; /* Flexbox for layout */
+      justify-content: space-between; /* Spread items */
+      align-items: center; /* Align vertically */
+      background-color: #2a9d8f;
+      padding: 1rem; /* relative unit */
+    }
+
+    /* Logo (block element) */
+    .logo {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    /* Navigation links */
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li {
+      list-style: none;
+      display: inline-block; /* inline-block for horizontal items */
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      padding: 0.5em 1em; /* em units */
+    }
+
+    .nav-links a:hover {
+      background-color: #21867a;
+      border-radius: 5px;
+    }
+
+    /* Float example: cart icon floated right */
+    .cart {
+      float: right;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    /* Clear example: ensures content below navbar doesn’t overlap */
+    .clear {
+      clear: both;
+    }
+
+    /* Mobile-first design: default flex-direction column */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column; /* stack items */
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+      .nav-links a {
+        display: block; /* block for full width on mobile */
+        width: 100%;
+      }
+    }
+
+    /* Tablet breakpoint */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .navbar {
+        flex-direction: row;
+      }
+
+      .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+
+    /* Desktop breakpoint */
+    @media (min-width: 1025px) {
+      .navbar {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Deals</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="cart">🛒</div>
+  </nav>
+
+  <!-- Clear element -->
+  <div class="clear"></div>
+
+  <!-- Page Content -->
+  <section style="padding:2rem; font-size:1rem;">
+    <h2>Welcome to ShopEase</h2>
+    <p>
+      This is a demo of a responsive e-commerce style navigation bar. 
+      Resize the browser window to see how the navbar adapts for mobile, tablet, and desktop layouts.
+    </p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Menu Example</title>
+  <style>
+    /* Block element: full-width header */
+    header {
+      display: block;
+      width: 100%;
+      background-color: #2a9d8f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    /* Navigation container */
+    nav {
+      background-color: #264653;
+      overflow: hidden; /* helps manage floats */
+    }
+
+    /* Inline-block menu items */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block; /* horizontal menu items */
+      float: left;           /* float to arrange side by side */
+    }
+
+    nav ul li a {
+      display: inline; /* inline text inside links */
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      background-color: #e76f51;
+    }
+
+    /* Clear property to prevent overlap */
+    .clear {
+      clear: both;
+    }
+
+    /* Content section */
+    .content {
+      padding: 20px;
+      font-size: 16px;
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <!-- Block header -->
+  <header>
+    My E-Commerce Website
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <!-- Clear after floated elements -->
+    <div class="clear"></div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h2>Welcome to Our Store</h2>
+    <p>
+      Browse our wide range of products and enjoy a seamless shopping experience.
+      This section demonstrates how content is neatly placed below the navigation menu using the <strong>clear</strong> property.
+    </p>
+  </div>
+</body>
+</html>
